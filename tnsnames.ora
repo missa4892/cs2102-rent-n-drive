@@ -1,0 +1,9 @@
+sid3 =
+  (description =
+    (address_list =
+      (address = (protocol = tcp)(host = sid3.comp.nus.edu.sg)(port = 1521))
+    )
+    (connect_data =
+      (service_name = sid3.comp.nus.edu.sg)
+    )
+  )
