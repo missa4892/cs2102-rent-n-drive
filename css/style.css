@@ -1,0 +1,41 @@
+/*================  Home Page Design  ==========================*/
+#header {
+	/*width: 100%;
+	display: block;*/
+	/*clear: both;*/
+}
+.carousel {
+	position: absolute;
+	display: block;
+}
+#header-carousel {
+	width: 100%;
+}
+.carousel-inner > .item > img {
+	width:1140px; 
+	/*height: 500px;*/
+	margin: auto; 
+	overflow: hidden;
+	-webkit-mask: -webkit-linear-gradient(
+		left,
+		rgba(255,255,255,0),
+		rgba(255,255,255,1) 15%,
+		rgba(255,255,255,1) 85%,
+		rgba(255,255,255,0)
+		);
+}
+.navbar {
+	display: block;
+	position: absolute;
+	width: 1140px; 
+	margin: auto;
+	z-index: 100;
+	left:50%;
+	margin-left:-570px;
+}
+#leftsidebar {
+	padding: 30px;
+	margin-top: 700px;
+	width: 200px;
+	float: left;
+}
