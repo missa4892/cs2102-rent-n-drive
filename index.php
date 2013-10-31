@@ -1,3 +1,19 @@
+<?php 
+if(isset($_POST["vehicle"])) {
+  echo "yeah its a car";
+  exit();
+}
+$newadd = "new car";
+$popular = "popular";
+$tabcontent = '<ul class="nav nav-tabs nav-justified">
+      <li><a href="#newadd" data-toggle="tab">New Additions</a></li>
+      <li><a href="#popular" data-toggle="tab">Most Popular</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="newadd">'.$newadd.'</div>
+      <div class="tab-pane" id="popular">'.$popular.'</div>
+    </div>';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,7 +79,7 @@
           <ul class="dropdown-menu">
             <li><a href="#">Cars</a></li>
             <li><a href="#">Minibus</a></li>
-            <li><a href="#">Two-wheelers</a></li>
+            <li><a href="#">Motorcyles</a></li>
             <li><a href="#">Bus</a></li>
             <!-- <li><a href="#">One more separated link</a></li> -->
           </ul>
@@ -92,12 +108,36 @@
 </div>
 
   <div id="leftsidebar">
-    <ul class="nav nav-pills nav-stacked">
-  <li class="active"><a href="#">Car</a></li>
-  <li><a href="#">Minibus</a></li>
-  <li><a href="#">Two-wheelers</a></li>
-  <li><a href="#">Bus</a></li>
-</ul>
+<div class="tabbable">
+    <ul class="nav nav-pills nav-stacked span2">
+      <li class="active vehicle"><a href="#car" data-toggle="tab">Car</a></li>
+      <li class="vehicle"><a href="#motorcycles" data-toggle="tab">Motorcycles</a></li>
+      <li class="vehicle"><a href="#bus" data-toggle="tab">Bus</a></li>
+      <li class="vehicle"><a href="#minibus" data-toggle="tab">Minibus</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="car" class="tab-pane active">
+<!--       <?php echo $tabcontent ?>
+ -->      </div>
+      <div id="motorcycles" class="tab-pane">
+      <h4>Pane 2 Content</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod congue bibendum. Aliquam erat volutpat. Phasellus eget justo lacus. Vivamus pharetra ullamcorper massa, nec ultricies metus gravida egestas.</p>
+      </div>
+      <div id="bus" class="tab-pane">
+        <h4>Pane 3 Content</h4>
+        <p>Ut porta rhoncus ligula, sed fringilla felis feugiat eget. In non purus quis elit iaculis tincidunt. Donec at ultrices est.</p>
+      </div>
+      <div id="minibus" class="tab-pane">
+        <h4>Pane 4 Content</h4>
+        <p>Donec semper vestibulum dapibus. Integer et sollicitudin metus. Vivamus at nisi turpis. Phasellus vel tellus id felis cursus hendrerit. Suspendisse et arcu felis, ac gravida turpis. Suspendisse potenti.</p>
+      </div>
+    </div><!-- /.tab-content -->
+  </div>
+  </div>
+
+
+  <div id="rightcontent">
+
   </div>
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="//code.jquery.com/jquery.js"></script>
@@ -105,7 +145,20 @@
   <script src="js/bootstrap.min.js"></script> <script>
     $('.carousel').carousel({  
       interval: 3000 // in milliseconds  
-    }) 
+    });
+    $('#leftsidebar a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    });
+    $(document).ready(function() {
+    $(".vehicle").click(function(event) {
+        alert(event.target.href);
+        var content = $.post( "index.php", { vehicle: "Car"})
+  .done(function( data ) {
+    alert( "Data Loaded: " + data );
+  });
+    });
+});
     </script>
 
 </body>
