@@ -7,6 +7,12 @@ CREATE TABLE VEHICLES (
   available NUMBER(1) CHECK (available ='1' or available = '0')
 );
 
+ALTER TABLE VEHICLES DROP COLUMN price;
+
+ALTER TABLE VEHICLES ADD (price_weekend NUMERIC(3) NOT NULL);
+
+ALTER TABLE VEHICLES ADD  (price_weekday NUMERIC(3) NOT NULL);
+
 CREATE TABLE USERS (
   uname VARCHAR (50) NOT NULL, 
   emailAdd VARCHAR (20) NOT NULL, 
