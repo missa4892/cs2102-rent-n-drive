@@ -35,7 +35,15 @@
 }
 #leftsidebar {
 	padding: 30px;
-	margin-top: 700px;
+	padding-top: 700px;
+}
+#leftsidebar > div > ul  {
 	width: 200px;
-	float: left;
+	display: inline-block;
+}
+#leftsidebar .tab-content {
+	padding: 0px 0px 20px;
+	vertical-align: top;
+	width: 800px;
+	display: inline-block;
 }
