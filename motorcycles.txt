@@ -1,0 +1,67 @@
+INSERT INTO MOTORCYCLES
+sizeType, mileage, cc, vehicleNo)
+INSERT INTO VEHICLE VALUES (vehicleNo, modeltype, color, price, branch, available, fueltype, manual, sizetype);
+
+INSERT INTO MOTORCYCLES(special, , ,m41)
+INSERT INTO VEHICLES(m41, BMW R 1200R, white, huogang, available, petrol, auto, special, 150, 200)
+
+INSERT INTO MOTORCYCLES(standard, , ,m42)
+INSERT INTO VEHICLES(m42,Yamaha MT-07, red, tampines, available, petrol, auto, standard, 100, 150)
+
+INSERT INTO MOTORCYCLES(standard, , ,m43)
+INSERT INTO VEHICLES(m43, BMW R nineT, black, woodlands, available, petrol, auto, standard, 175, 290)
+
+INSERT INTO MOTORCYCLES(small, , 234, m44)
+INSERT INTO VEHICLES(m44, Honda Rebel 250, black, woodlands, available, petrol, auto, small, 100, 175)
+
+INSERT INTO MOTORCYCLES(small, , 249, m45)
+INSERT INTO VEHICLES(m45, Yamaha Star Motorcycles V Star 250, black, tampines, available, petrol, auto, small, 100, 175)
+
+INSERT INTO MOTORCYCLES(small, , 249, m46)
+INSERT INTO VEHICLES(m46, Yamaha Star Motorcycles V Star 250, black, woodlands, available, petrol, auto, small, 150, 190)
+
+INSERT INTO MOTORCYCLES(small, , 652, m47)
+INSERT INTO VEHICLES(m47, Suzuki Boulevard S40, chrome, tampines, available, petrol, auto, small, 150, 190)
+
+INSERT INTO MOTORCYCLES(small, , 883, m49)
+INSERT INTO VEHICLES(m49, Harley-Davidson Sportster 883 SuperLow, chrome, huogang, available, petrol, auto, small, 150, 190)
+
+INSERT INTO MOTORCYCLES(standard, , 249, m48)
+INSERT INTO VEHICLES(m48, Suzuki TU250X, chrome, huogang, available, petrol, auto, standard, 175, 290)
+
+INSERT INTO MOTORCYCLES(special, , 249, m49)
+INSERT INTO VEHICLES(m49, Honda CBR250R, red, tampines, available, petrol, auto, special, 150, 190)
+
+INSERT INTO MOTORCYCLES(special, , 249, m50)
+INSERT INTO VEHICLES(m50, Kawasaki Ninja 250R, green, woodlands, available, petrol, auto, special, 175, 290)
+
+INSERT INTO MOTORCYCLES(special, , 223, m51)
+INSERT INTO VEHICLES(m51, Yamaha TT-R230, blue, huogang, available, petrol, auto, special, 150, 190)
+
+INSERT INTO MOTORCYCLES(special, , 1649, m52)
+INSERT INTO VEHICLES(m52, BMW K 1600 GT, blue, woodlands, available, petrol, auto, special, 151, 189)
+
+INSERT INTO MOTORCYCLES(special, , 675, m53)
+INSERT INTO VEHICLES(m53, Triumph Speed Triple, white, tampines, available, petrol, auto, special, 100, 175)
+
+INSERT INTO MOTORCYCLES(special, , 1198, m54)
+INSERT INTO VEHICLES(m54, Ducati 1199 Superleggera, red, woodlands, available, petrol, auto, special, 150, 190)
+
+INSERT INTO MOTORCYCLES(special, , 1731, m55)
+INSERT INTO VEHICLES(m55, Victory Cross Country Tour, red, huogang, available, petrol, auto, special, 155, 294)
+
+INSERT INTO MOTORCYCLES(standard, , 499, m56)
+INSERT INTO VEHICLES(m56, Royal Enfield Bullet G5 Deluxe, black, woodlands, available, petrol, auto, standard, 175, 290)
+
+INSERT INTO MOTORCYCLES(special, , 499, m57)
+INSERT INTO VEHICLES(m57, Harley Davidson CVO Road King, green, tampines, available, petrol, auto, special, 153, 198)
+
+INSERT INTO MOTORCYCLES(standard, , 500, m58)
+INSERT INTO VEHICLES(m58, Royal Enfield Classic 500, blue, woodlands, available, petrol, auto, standard, 120, 160)
+
+INSERT INTO MOTORCYCLES(special, , 499, m59)
+INSERT INTO VEHICLES(m59, Royal Enfield Thunderbird 500, black, huogang, available, petrol, auto, special, 175, 290)
+
+INSERT INTO MOTORCYCLES(special, , 499, m60)
+INSERT INTO VEHICLES(m60, Suzuki GSX-R750, blue, tampines, available, petrol, auto, special, 100, 175)
+
