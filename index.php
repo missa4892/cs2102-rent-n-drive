@@ -75,7 +75,7 @@ $tabcontent = '<ul class="nav nav-tabs nav-justified">
               <li class="active"><a href="#">About Us</a></li>
               <li><a href="#">FAQ</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Vehicles<b class="caret"></b></a>
+                <a href="vehicles.php" class="dropdown-toggle" data-toggle="dropdown">Vehicles<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Cars</a></li>
                   <li><a href="#">Minibus</a></li>
@@ -110,141 +110,137 @@ $tabcontent = '<ul class="nav nav-tabs nav-justified">
           </ul>
           <div class="tab-content">
             <div id="car" class="tab-pane active">
-<!--       <?php echo $tabcontent ?>
--->      </div>
-<div id="motorcycles" class="tab-pane">
-  <h4>Pane 2 Content</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod congue bibendum. Aliquam erat volutpat. Phasellus eget justo lacus. Vivamus pharetra ullamcorper massa, nec ultricies metus gravida egestas.</p>
-</div>
-<div id="bus" class="tab-pane">
-  <h4>Pane 3 Content</h4>
-  <p>Ut porta rhoncus ligula, sed fringilla felis feugiat eget. In non purus quis elit iaculis tincidunt. Donec at ultrices est.</p>
-</div>
-<div id="minibus" class="tab-pane">
-  <h4>Pane 4 Content</h4>
-  <p>Donec semper vestibulum dapibus. Integer et sollicitudin metus. Vivamus at nisi turpis. Phasellus vel tellus id felis cursus hendrerit. Suspendisse et arcu felis, ac gravida turpis. Suspendisse potenti.</p>
-</div>
-</div><!-- /.tab-content -->
-</div>
-</div>
-
-
-<div id="rightcontent">
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel">Login or Join Us Now!</h4>
-        </div>
-        <div class="modal-body">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              Already a member? <a href="#" class="active" id="login">Log in now!</a>
             </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 well well-sm">
-                <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
-                <form action="#" method="post" class="form" role="form">
-                  <div class="row">
-                    <div class="col-xs-6 col-md-6">
-                      <input class="form-control" name="firstname" placeholder="First Name" type="text"
-                      required autofocus />
-                    </div>
-                    <div class="col-xs-6 col-md-6">
-                      <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
-                    </div>
-                  </div>
-                  <input class="form-control" name="youremail" placeholder="Your Email" type="email" />
-                  <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
-                  <input class="form-control" name="password" placeholder="New Password" type="password" />
-                  <label for="">Birth Date</label>
-                  <div class="row">
-                    <div class="col-xs-4 col-md-4">
-                      <select class="form-control">
-                        <option value="Month">Month</option>
-                      </select>
-                    </div>
-                    <div class="col-xs-4 col-md-4">
-                      <select class="form-control">
-                        <option value="Day">Day</option>
-                      </select>
-                    </div>
-                    <div class="col-xs-4 col-md-4">
-                      <select class="form-control">
-                        <option value="Year">Year</option>
-                      </select>
-                    </div>
-                  </div>
-                  <label class="radio-inline">
-                    <input type="radio" name="sex" id="inlineCheckbox1" value="male" />Male</label>
-                    <label class="radio-inline">
-                      <input type="radio" name="sex" id="inlineCheckbox2" value="female" />Female</label>
-                      <br />
-                      <br />
-                      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
-                    </form>
-                  </div>
+            <div id="motorcycles" class="tab-pane">
+              <h4>Pane 2 Content</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod congue bibendum. Aliquam erat volutpat. Phasellus eget justo lacus. Vivamus pharetra ullamcorper massa, nec ultricies metus gravida egestas.</p>
+            </div>
+            <div id="bus" class="tab-pane">
+              <h4>Pane 3 Content</h4>
+              <p>Ut porta rhoncus ligula, sed fringilla felis feugiat eget. In non purus quis elit iaculis tincidunt. Donec at ultrices est.</p>
+            </div>
+            <div id="minibus" class="tab-pane">
+              <h4>Pane 4 Content</h4>
+              <p>Donec semper vestibulum dapibus. Integer et sollicitudin metus. Vivamus at nisi turpis. Phasellus vel tellus id felis cursus hendrerit. Suspendisse et arcu felis, ac gravida turpis. Suspendisse potenti.</p>
+            </div>
+          </div><!-- /.tab-content -->
+        </div>
+      </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">Login or Join Us Now!</h4>
+            </div>
+            <div class="modal-body">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Already a member? <a href="#" class="active" id="login">Log in now!</a>
                 </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-<!--         <button type="button" class="btn btn-primary">Save changes</button>
--->      </div>
-</div><!-- /.modal-content -->
-</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="//code.jquery.com/jquery.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script> <script>
-$('.carousel').carousel({  
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 well well-sm">
+                    <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
+                    <form action="#" method="post" class="form" role="form">
+                      <div class="row">
+                        <div class="col-xs-6 col-md-6">
+                          <input class="form-control" name="firstname" placeholder="First Name" type="text"
+                          required autofocus />
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                          <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+                        </div>
+                      </div>
+                      <input class="form-control" name="youremail" placeholder="Your Email" type="email" />
+                      <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
+                      <input class="form-control" name="password" placeholder="New Password" type="password" />
+                      <label for="">Birth Date</label>
+                      <div class="row">
+                        <div class="col-xs-4 col-md-4">
+                          <select class="form-control">
+                            <option value="Month">Month</option>
+                          </select>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <select class="form-control">
+                            <option value="Day">Day</option>
+                          </select>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <select class="form-control">
+                            <option value="Year">Year</option>
+                          </select>
+                        </div>
+                      </div>
+                      <label class="radio-inline">
+                        <input type="radio" name="sex" id="inlineCheckbox1" value="male" />Male</label>
+                        <label class="radio-inline">
+                          <input type="radio" name="sex" id="inlineCheckbox2" value="female" />Female</label>
+                          <br />
+                          <br />
+                          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                -->      </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+          <script src="//code.jquery.com/jquery.js"></script>
+          <!-- Include all compiled plugins (below), or include individual files as needed -->
+          <script src="js/bootstrap.min.js"></script> <script>
+          $('.carousel').carousel({  
       interval: 3000 // in milliseconds  
     });
-$('#leftsidebar a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-});
-$(document).ready(function() {
-  var divClone = '';
-  $(".vehicle").click(function(event) {
-    alert(event.target.href);
-    var content = $.post( "index.php", { vehicle: "Car"})
-    .done(function( data ) {
-      alert( "Data Loaded: " + data );
-    });
-  });
+          $('#leftsidebar a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+          });
+          $(document).ready(function() {
+            var divClone = '';
+            $(".vehicle").click(function(event) {
+              alert(event.target.href);
+              var content = $.post( "index.php", { vehicle: "Car"})
+              .done(function( data ) {
+                alert( "Data Loaded: " + data );
+              });
+            });
 
-  $("#login").click(function(event) {
-    console.log("login clicked");
-    var html = '<div class="container">';
-    html += '<div class="row">';
-    html += '<div class="col-sm-12">';
-    html += '<h1 class="text-center login-title">Sign in to continue to Rent-N-Drive</h1>';
-    html += '<div class="account-wall">';
-    html += '<img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="">';
-    html += '<form class="form-signin">';
-    html += '<input type="text" class="form-control" placeholder="Email" required autofocus>';
-    html += '<input type="password" class="form-control" placeholder="Password" required>';
-    html += '<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>';
-    html += '<label class="checkbox pull-left">';
-    html += '<input type="checkbox" value="remember-me">Remember me</label>';
-    html += '<a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>';
-    html += '</form>';
-    html += '</div>';
-    html += '<a href="#" class="text-center new-account">Create an account</a>';
-    html += '</div>';
-    html += '</div>';
-    html += '</div>';
-    divClone = $(".container").clone();
-    $(".container").html(html);
-    $(".panel-body").html('Not a member? <a href="#" class="active" id="signup">Sign up now!</a>');
-  });
+            $("#login").click(function(event) {
+              console.log("login clicked");
+              var html = '<div class="container">';
+              html += '<div class="row">';
+              html += '<div class="col-sm-12">';
+              html += '<h1 class="text-center login-title">Sign in to continue to Rent-N-Drive</h1>';
+              html += '<div class="account-wall">';
+              html += '<img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="">';
+              html += '<form class="form-signin">';
+              html += '<input type="text" class="form-control" placeholder="Email" required autofocus>';
+              html += '<input type="password" class="form-control" placeholder="Password" required>';
+              html += '<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>';
+              html += '<label class="checkbox pull-left">';
+              html += '<input type="checkbox" value="remember-me">Remember me</label>';
+              html += '<a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>';
+              html += '</form>';
+              html += '</div>';
+              html += '<a href="#" class="text-center new-account">Create an account</a>';
+              html += '</div>';
+              html += '</div>';
+              html += '</div>';
+              divClone = $(".container").clone();
+              $(".container").html(html);
+              $(".panel-body").html('Not a member? <a href="#" class="active" id="signup">Sign up now!</a>');
+            });
 
 $("#signup").click(function(event) {
   console.log("signup clicked");

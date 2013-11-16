@@ -1,5 +1,5 @@
 /*================  Home Page Design  ==========================*/
-
+body { padding-top: 50px; }
 #header {
 	/*width: 100%;
 	display: block;*/
@@ -32,19 +32,24 @@
 .navbar-right {
 	padding-right: 10px;
 }
+#rightcontent {
+    /*margin: auto;*/
+    padding-top: 20px;
+    display: inline-block;
+    width: 800px;
+}
+/*.thumbnail {
+    display: inline-block !important;
+}
+.thumbnail>img {
+    margin: 0 !important;
+}*/
 #leftsidebar {
+    display: inline-block;
+    width: 200px;
+    height: 100%;
 	padding: 30px;
-	padding-top: 700px;
-}
-#leftsidebar > div > ul  {
-	width: 200px;
-	display: inline-block;
-}
-#leftsidebar .tab-content {
-	padding: 0px 0px 20px;
-	vertical-align: top;
-	width: 800px;
-	display: inline-block;
+	/*padding-top: 700px;*/
 }
 #myModal .form-control { margin-bottom: 10px; }
 .modal-footer { margin-top: 0px !important;}
